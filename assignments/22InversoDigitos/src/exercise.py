@@ -1,8 +1,15 @@
 def main():
-    num = int(input("Enter a number: "))
+    number = int(input("Enter a number: "))
     #escribe tu código abajo de esta línea
-    
-
-
-if __name__=='__main__':
-    main()
+    numberstr= str(number)
+    if len(numberstr)>6:
+        print('Too long')
+    else:
+     if number >0:
+        reverso= numberstr[len(numberstr)::-1]
+        print(reverso)
+     else:
+        negativo= numberstr[0]
+        reverso= numberstr[len(numberstr):0:-1]
+        reversaneg= negativo + reverso
+        print(reversaneg)
